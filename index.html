@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Vaccination</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <h1>Vaccination</h1>
+      </div>
+      <nav>
+        <ul class="header__nav">
+          <li><a href="#">Database</a></li>
+          <li><a href="#">Education</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Regulation</a></li>
+          <li><a href="#" class="btn">Hoax Buster</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <div class="banner">
+        <div class="banner__contenido">
+          <h2 class="banner__contenido-titulo">Fight Virus With Vaccines</h2>
+          <p class="banner__contenido-parrafo">
+            Let's stop this pandemic by killing the virus <br />
+            with a vaccine, don't let yourself and your <br />
+            family get infected
+          </p>
+
+          <div class="banner__caracter">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAcJJREFUSEu1Ve11gkAQnKWBIBYQOghXQUwFSQeSCjQVRCuIVhDsQCuIqeBMBbEBCDbA5nHgPe74NHneLzj2ZnbnZhfClRddGR+DCViOQxDPAE7BzopEvBuSXCcBS9eF40zBmAPwLcAjCCtk2YZEmraRNRKwdH04zgyMEIDbk2kKQoQsW5NIj3asQcDSDUDODFDAf1kRWBEdzodNgoPHf0G1zqQUJKNrEoCCRCf+nwpOYN6D6NGq4ERBou/NJPga78F8P0CmEzib5FqzHG0NEqJPuosnzRJJLwJhahAwliBl05tyvwKuTPFhOI2xJpHk8WpZLvLmILxpAsaSRLIo3bVX+zrzBnD1nZ5JxFELgeuDnO9KBSk4eyikcAOV0fnZzvx8iLNRtfFqjcb1e9AkKsGiV0xZNDjvSPw8VSWuExQz5932dl5JIWoLeCFfXm0hZdMd6EQOXt7ytzWSYqN5dFju6SaQ7qTM1OJofdXOsiNapylLbwHC6yAGxguJZNUU2zOuG/rCRmFsSCStw7H3h8NNzacvqxtceWKIBCxVAy7MbqaQRLztOz+IoPS/D1CpM4ddf7Fem/Zldcn3wRVcAlqN/QV+e8YZaJTLRQAAAABJRU5ErkJggg=="
+            />
+            <p>Best protection</p>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAYJJREFUSEu1leFdwjAUxO+6gKUsABPQTCBMoG6AE4gTCBPIBuoGbCBOkDKBXYBYFujzRwvY0pSmIP2a5P55eXevxJU/XlkfrQASBREAYWiU68WcAaK7Y1DeMmHhI9X63QXiDlh1lxC5zUVlyfBn9G8A0f4Q9D5LgpKOqJJlE8SpAtGdBci7MgAfVGZ8MUC03wO9b6uQpH2qJD4FOVQgunsPTwYQ9ADp5YfoAwgbbhkBkuz2xyBipFxRrReZwv6wRIE0ldtmnaHJtIsV/NmwjZJtb8HGpSaXvH4eZAPhpJiRiosugGwg6ZAq2ab98FltegbEKl7qwfGLiA7mIJ6cXupE6GqDJqXR0IARPFOZuW1XPaCNbckvDtZDZ4B19jS9laQdqmQXuMYmBxMQrxVNwSwPOF6qa3zYp9fBRZXhtoKk470FRfsh6G3/B4ODmNiHn92mUbAt9SY7LJhRmak1sDqYFqqJGZr+8b46QB6Wwq3rWlCoBgxNZTA6/Q+a+ntq/eqAX23Fohkcv8gDAAAAAElFTkSuQmCC"
+            />
+            <p>Selected Vaccines</p>
+          </div>
+        </div>
+        <div class="banner__date">
+          <div class="banner__date-title">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAYhJREFUSEu1lT1ag0AQhr/hAh5B7cRG0oVY+NiFNOIJzA1MTiKeQD2B2GRbG6HFJmuZ3CAncHz4DT9hYWNCy+y8883Mfks48kdHzo9OwMU4nBoGbpjZAshKC+KIiCKA/OVi+KEqshVgOoEL0BOAsw6VK4DnUoz8XXE7AaYTeAA96rWPPCmG8/qZBmC/5HlafpZiNCtDKoCsLe9tlUthJ/GmE3K7Or4vt6sGCFcATv8HwEoK+zzPUQDibSHCi6rv/RQkW1aoKACmE74CeDgMAG9S2NM411bBJIyIcXUYAEdSjAYVgHpwKbbUog2Akz7FlFuk2Iw0FdHvYLm4ji4nXxaz8amC5MVotQjgDRHfdkGY8P2zsBNb0Rpy5kN9IM0hd12yar+3Ssxx4IPorva/uabZDVVetDoEiOfAbm3YaynswiC1rKKf+SmsIlWxj5P2NLs8bD9I00krW1SXnw3dU5lfdmYN8EzrwSnDMpDLBCu3knjPiREB7LclbrhpvwHqR3U++vopqyf+AB1+vhn4rse1AAAAAElFTkSuQmCC"
+            />
+            <p>Schedule your vaccinations</p>
+          </div>
+
+          <div class="panel__container">
+            <div class="contendor__inf">
+              <div class="panel__container-icon">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAVxJREFUSEu1lTFSw0AMRb8oIGWOEDpTQUqWIqYzp4AbEG7i3AAuAU4VpyBpQ4UzFOQI0BlmGDFLxoyxpV3bQ7by7Mr/SV9embDjRTvWhxcQRMsBM18DCIlwYhNixgpASkSTLDnduJJ0Ao4uFjEzrLi6mBGvp+ZGC1ABQfS4Aui4iYW2ovXUDKVYEdAk86oYESbPD2Zc269uWM8BfpWyyRLzk1AQLViujA6rPalV4MreB5CqqAFc3vsAUi8EwN/yC1Gt2VW7qvH/DXjPEtMvJyMBUgCjbk3GPEtM6APcArjsCLjLEnPlASxDgGddAF97PHy5P7Nj5HeJF63NLS5p1eyxZwpAr0L7mqTsVYA9aDMutDHhBGxHQqOBJ1pTVOoc14Nw1u/19lN9qvJTnn+Gm/T8rfW4Ll7QIX5xr0U6pJl4Y4AN3FZyENvnPP8Yu2zx3gPNzy773p9+F9HyO9/0gbEZtKnT1gAAAABJRU5ErkJggg=="
+                />
+                <p>Location</p>
+              </div>
+              <div class="panel__container-icon">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMdJREFUSEtjZKAxYKSx+Qx4LdDwOPYf5IAbO6ywqiMkD9JLXws0PI47MDD8n8/AwKBAZtA9YGBgTLyxw/IATD+KDzQ8jj1gYGCQJ9NwmLYHN3ZYKeKyABzmlALkOEP3Ad5IJWQxtkgfGAsIuZSQPMEgImQAIfnBYwHMJeiRh4sP8xnRPqC5BYTCGpc80T6guQU0DyKaW0DzIKKFBR8YGBj4yTUYqu/hjR1W8PoErbADVzgLKKgTHjIwMCbgrHAodDlW7TRvVQAAuHiYGVhNMiEAAAAASUVORK5CYII="
+                />
+
+                <p>Date</p>
+              </div>
+              <div class="panel__container-icon">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAQVJREFUSEu1lD0OgjAUgNswyKZHYDHpqCO4yNZ4CfVEHkG9gZPppouwOjZx4QicgJqCxiItebTlzeX73i8YjRx4ZD5yEhCa72SCnMUnU6LWggYujg0Y700SK0G0vs3CcFIghKa/zPWSwQIJL+5pOd88FkGF74rkzFlSt0yNQQLZFiHEoQpE+rqunorkooPXzYNukdpzIVD5lRCaR5zFsl3aAAnaA204UoIxXvbBQRXo4J9UtT0fNANCM7nfW03tIHhvBT7gRoEvuFZghpuvtW8TO1tEaCa6H9jBTRX8CezhAIEbHHQH0Et3umQXCehX4VWg3yK4grOklTRwTT0K4CjYy9Fn8AaO6XIZsf7QQQAAAABJRU5ErkJggg=="
+                />
+                <p>Vaccine Type</p>
+              </div>
+
+              <div class="panel__container-info">
+                <p>Jakarta Utara</p>
+              </div>
+              <div class="panel__container-info">
+                <p>08 July 2022</p>
+              </div>
+              <div class="panel__container-info">
+                <p>Moderna</p>
+              </div>
+              <div class="centerBtn boton">
+                <button class="btn-icon">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="contenedor__lista">
+        <div class="lista__img">
+          <img src="/asset/astraZeneca.png" alt="AstraZeneca" />
+        </div>
+        <div class="lista__img">
+          <img src="/asset/sinovac.png" alt="sinovac" />
+        </div>
+        <div class="lista__img">
+          <img src="/asset/pfizer.png" alt="Pfizer" />
+        </div>
+        <div class="lista__img">
+          <img src="/asset/moderna.png" alt="Moderna" />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="contenedor__title">
+        <h3>Why should I vaccine?</h3>
+        <p>
+          In order to avoid any doubts about getting the COVID-19 <br />
+          vaccine, identify the following 4 benefits of COVID-19 <br />
+          vaccination:
+        </p>
+      </div>
+
+      <div class="contenedor__beneficios">
+        <div class="card">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            style="fill: rgba(40, 72, 198, 1); transform: msFilter"
+          >
+            <path d="M5 11h14v2H5z"></path>
+          </svg>
+          <div>
+            <h3>
+              Minimize the <br />
+              spread of viruses
+            </h3>
+            <p>
+              Vaccine has been proven <br />
+              effective to prevent someone <br />
+              from getting infected with <br />
+              Coronavirus
+            </p>
+          </div>
+        </div>
+
+        <div class="card sombra">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            style="fill: rgba(40, 72, 198, 1); transform: msFilter"
+          >
+            <path
+              d="M11.488 21.754c.294.157.663.156.957-.001 8.012-4.304 8.581-12.713 8.574-15.104a.988.988 0 0 0-.596-.903l-8.05-3.566a1.005 1.005 0 0 0-.813.001L3.566 5.747a.99.99 0 0 0-.592.892c-.034 2.379.445 10.806 8.514 15.115zM8.674 10.293l2.293 2.293 4.293-4.293 1.414 1.414-5.707 5.707-3.707-3.707 1.414-1.414z"
+            ></path>
+          </svg>
+          <div>
+            <h3>
+              Forming<br />
+              antibodies
+            </h3>
+            <p>
+              COVID-19 vaccine proven to <br />
+              help shape antibody <br />
+              response for immune system
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            style="fill: rgba(40, 72, 198, 1); transform: msFilter"
+          >
+            <path
+              d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2 7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h17z"
+            ></path>
+          </svg>
+          <div>
+            <h3>Protecting<br />people nearby</h3>
+            <p>
+              The benefits of COVID-19 <br />
+              vaccination are the vaccine <br />
+              that we get can also help <br />
+              protect people around us
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            style="fill: rgba(40, 72, 198, 1); transform: msFilter"
+          >
+            <path d="M3 3v17a1 1 0 0 0 1 1h17v-2H5V3H3z"></path>
+            <path
+              d="M15.293 14.707a.999.999 0 0 0 1.414 0l5-5-1.414-1.414L16 12.586l-2.293-2.293a.999.999 0 0 0-1.414 0l-5 5 1.414 1.414L13 12.414l2.293 2.293z"
+            ></path>
+          </svg>
+          <div>
+            <h3>
+              Creating group <br />
+              immunity
+            </h3>
+            <p>
+              COVID-19 vaccination is also <br />
+              beneficial for creating group <br />
+              immunity or herd immunity
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contenedor__preparacion">
+      <div>
+        <img src="/asset/en.png" alt="Nurse" />
+      </div>
+
+      <div class="preparacion__title">
+        <div>
+          <h3>Preparations Before Vaccine</h3>
+
+          <p>
+            The success of vaccines is strongly influenced by the <br />
+            strength of the body's immune system. Therefore, there are <br />
+            several things that can be tried to make the COVID-19 <br />
+            vaccine work :
+          </p>
+        </div>
+
+        <div class="info">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(40, 72, 198, 1);transform: msFilter"><path d="M11.492 21.771c.294.157.663.157.957-.001 8.012-4.304 8.581-12.713 8.574-15.104a.988.988 0 0 0-.596-.903l-8.051-3.565a1.005 1.005 0 0 0-.813.001L3.57 5.765a.988.988 0 0 0-.592.891c-.034 2.379.445 10.806 8.514 15.115zM8.293 9.707l1.414-1.414L12 10.586l2.293-2.293 1.414 1.414L13.414 12l2.293 2.293-1.414 1.414L12 13.414l-2.293 2.293-1.414-1.414L10.586 12 8.293 9.707z"></path></svg>
+          <h3>Avoid alcoholic beverages</h3>
+          
+          <div class="svg-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(40, 72, 198, 1);transform: msFilter;"><path d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"></path></svg>
+          </div>
+        </div>
+
+        <div class="info">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(40, 72, 198, 1);transform: msFilter"><path d="M11.492 21.771c.294.157.663.157.957-.001 8.012-4.304 8.581-12.713 8.574-15.104a.988.988 0 0 0-.596-.903l-8.051-3.565a1.005 1.005 0 0 0-.813.001L3.57 5.765a.988.988 0 0 0-.592.891c-.034 2.379.445 10.806 8.514 15.115zM8.293 9.707l1.414-1.414L12 10.586l2.293-2.293 1.414 1.414L13.414 12l2.293 2.293-1.414 1.414L12 13.414l-2.293 2.293-1.414-1.414L10.586 12 8.293 9.707z"></path></svg>
+          <h3>Avoid stress</h3>
+          <div class="svg-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(40, 72, 198, 1);transform: msFilter;"><path d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"></path></svg>
+          </div>
+        </div>
+        <div>
+          <div class="info__p">
+            <p>
+              Stress has a profound effect on immune work. <br>
+              Moreover, prolonged stress can increase cortisol <br>
+              production and oxidative stress in the body.
+            </p>
+          </div>
+        </div>
+
+        <div class="info">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(40, 72, 198, 1);transform: msFilter;"><path d="M3 3v17a1 1 0 0 0 1 1h17v-2H5V3H3z"></path><path d="M15.293 14.707a.999.999 0 0 0 1.414 0l5-5-1.414-1.414L16 12.586l-2.293-2.293a.999.999 0 0 0-1.414 0l-5 5 1.414 1.414L13 12.414l2.293 2.293z"></path></svg>
+          <h3>Eat healthy food</h3>
+          <div class="svg-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(40, 72, 198, 1);transform: msFilter;"><path d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"></path></svg>
+          </div>
+        </div>
+        
+        <div class="info">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(40, 72, 198, 1);transform: msFilter;"><path d="M7 5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H7zm4 10.414-2.707-2.707 1.414-1.414L11 12.586l3.793-3.793 1.414 1.414L11 15.414z"></path></svg>
+          <h3>Get enough sleep</h3>
+          <div class="svg-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(40, 72, 198, 1);transform: msFilter;"><path d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"></path></svg>
+          </div>
+        </div>
+
+        <div class="info">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(40, 72, 198, 1);transform: msFilter;"><path d="M20.205 4.791a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412L12 21.414l8.207-8.207c2.354-2.353 2.355-6.049-.002-8.416z"></path></svg>
+          <h3>Exercise or physical activity</h3>
+          <div class="svg-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(40, 72, 198, 1);transform: msFilter;"><path d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"></path></svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contenedor__bottom">
+      <div class="contenedor__contenido">
+        <div>
+          <h3>Emergency Contact</h3>
+          <p>Contact one of the contacts below if you or your family feel <br> unwell and have similar symptoms such as Covid-19, make <br> sure you also take care of yourself before reporting to us :</p>
+        </div>
+      
+        <div class="icon-contact">
+        <div>
+          <div class="chat">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(40, 72, 198, 1);transform: msFilter"><path d="M20 10.999h2C22 5.869 18.127 2 12.99 2v2C17.052 4 20 6.943 20 10.999z"></path><path d="M13 8c2.103 0 3 .897 3 3h2c0-3.225-1.775-5-5-5v2zm3.422 5.443a1.001 1.001 0 0 0-1.391.043l-2.393 2.461c-.576-.11-1.734-.471-2.926-1.66-1.192-1.193-1.553-2.354-1.66-2.926l2.459-2.394a1 1 0 0 0 .043-1.391L6.859 3.513a1 1 0 0 0-1.391-.087l-2.17 1.861a1 1 0 0 0-.29.649c-.015.25-.301 6.172 4.291 10.766C11.305 20.707 16.323 21 17.705 21c.202 0 .326-.006.359-.008a.992.992 0 0 0 .648-.291l1.86-2.171a1 1 0 0 0-.086-1.391l-4.064-3.696z"></path></svg>
+            <div>
+              <h4>Call</h4>
+              <p>021.123.145.14</p>
+              <input class="btn-contact" type="submit" value="Call Now">
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="chat">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(40, 72, 198, 1);transform: msFilter"><path d="M12 2C6.486 2 2 5.589 2 10c0 2.908 1.897 5.516 5 6.934V22l5.34-4.004C17.697 17.852 22 14.32 22 10c0-4.411-4.486-8-10-8zm-2.5 9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"></path></svg>
+            <div>
+              <h4>Chat</h4>
+              <p>021.123.145.14</p>
+              <input class="btn-chat" type="submit" value="Chat Now">
+            </div>
+  
+          </div>
+        </div>
+
+       
+    </div>
+
+    <div class="icon-contact">
+      <div>
+        <div class="chat">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(40, 72, 198, 1);transform: msFilter"><path d="M18 7c0-1.103-.897-2-2-2H4c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-3.333L22 17V7l-4 3.333V7z"></path></svg>
+          <div>
+            <h4>Video Call</h4>
+            <p>021.123.145.14</p>
+            <input class="btn-contact" type="submit" value="Video Call Now">
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="chat">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(40, 72, 198, 1);transform: msFilter"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.7-8 5.334L4 8.7V6.297l8 5.333 8-5.333V8.7z"></path></svg>
+          <div>
+            <h4>Message</h4>
+            <p>021.123.145.14</p>
+            <input class="btn-contact" type="submit" value="Message Now">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+      <div>
+        <img src="/asset/es.png" alt="Enfermero">
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer--contenedor">
+          <div class="footer--left">
+              <div class="footer--goal">
+                  <h3 class="footer--goal__title">
+                      Vaccination
+                  </h3>
+                  <p class="footer--goal__text">
+                      Our goal is to help the world free from the ongoing pandemic
+                  </p>
+              </div>
+              <p>@2021 Vaccination. All rigths reserved</p>
+          </div>
+  
+          <div class="footer--right">
+              <div class="fRight--top">
+                  <div class="footer--about">
+                      <h3 class="footer--right__title">
+                          About
+                      </h3>
+                      <ul class="footer--list">
+                          <a href="#"><li>About Us</li></a>
+                          <a href="#"><li>Features</li></a>
+                          <a href="#"><li>News & Blog</li></a>
+                      </ul>
+                  </div>
+                 
+                  <div class="footer--company">
+                      <h3 class="footer--right__title">
+                          Company
+                      </h3>
+                      <ul class="footer--list">
+                          <a href="#"><li>How we work</li></a>
+                          <a href="#"><li>Capital</li></a>
+                          <a href="#"><li>Security</li></a>
+                      </ul>
+                  </div>
+                  
+                  <div class="footer--support">
+                      <h3 class="footer--right__title">
+                          Support
+                      </h3>
+                      <ul class="footer--list">
+                          <a href="#"><li>FAQs</li></a>
+                          <a href="#"><li>Support Center</li></a>
+                          <a href="#"><li>Contact Us</li></a>
+                      </ul>
+                  </div>
+              </div>
+              
+             <div class="fRight--bottom">
+                  <a href="#">Terms & Agreements</a>
+                  <a href="#">Privacy Policy</a>
+             </div>
+          </div>
+          
+      </div>
+   
+
+  </footer>
+  </body>
+</html>
